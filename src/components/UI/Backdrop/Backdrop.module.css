@@ -1,0 +1,9 @@
+.Backdrop {
+
+}
+
+@media (min-width: 500px) {
+    .Backdrop {
+        display: none;
+    }
+}
