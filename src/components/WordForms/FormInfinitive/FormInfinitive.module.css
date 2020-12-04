@@ -137,8 +137,8 @@
 
 @media only screen and (min-width: 500px) {
     .FormGrid {
-        width: 70%;
-        grid-template-rows: repeat(20, 50px);
-        grid-template-columns: 2.5fr 1fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr;
+        width: 90%;
+        grid-template-rows: repeat(20, 35px);
+        grid-template-columns: repeat(20, 1fr);
     }
 }

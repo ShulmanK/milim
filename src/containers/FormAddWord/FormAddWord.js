@@ -10,7 +10,7 @@ import CustomInput from "../../components/WordForms/FormElements/CustomInput/Cus
 
 class FormAddWord extends Component {
     state = {
-        step: 3,
+        step: 1,
         infinitive: '',
         imperative_man_singular: '',
         imperative_man_plural: '',
@@ -201,7 +201,6 @@ class FormAddWord extends Component {
                 }
             })
         })
-        console.log('icons', icons);
         return <div className={classes.FormGrid}>
             {inputs.map((input, index) => {
                 const {rowStart, rowEnd, columnStart, columnEnd, time, label, placeholder, name, iconSrc, iconAlt} = input;
@@ -299,7 +298,7 @@ class FormAddWord extends Component {
         if(width < 500){
             return (
                 <Fragment>
-                    <div className={classes.FormTitle}>Add Form</div>
+                    <div className={classes.FormTitle}>Add Verb</div>
                     {this.getFormMobile()}
                 </Fragment>
             )

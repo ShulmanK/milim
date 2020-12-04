@@ -13,10 +13,10 @@ export default formConfigurationMobile = [
         time: 'future',
         label: '',
         placeholder: '',
-        rowStart: '15',
-        rowEnd: '16',
-        columnStart: '4',
-        columnEnd: '5'
+        rowStart: '14',
+        rowEnd: '15',
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -610,8 +610,8 @@ export default formConfigurationMobile = [
                     iconSrc: One,
                     rowStart: '1',
                     rowEnd: '2',
-                    columnStart: '4',
-                    columnEnd: '5'
+                    columnStart: '8',
+                    columnEnd: '9'
                 },
             ]
         },
@@ -625,8 +625,8 @@ export default formConfigurationMobile = [
                     iconSrc: Many,
                     rowStart: '1',
                     rowEnd: '2',
-                    columnStart: '8',
-                    columnEnd: '9'
+                    columnStart: '17',
+                    columnEnd: '18'
                 },
             ]
         },

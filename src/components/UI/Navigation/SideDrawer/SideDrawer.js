@@ -13,7 +13,7 @@ const SideDrawer = (props) => {
         <div className={attachedClasses.join(' ')}>
             <DrawerToggle clicked = {props.clicked} show = {props.show}/>
             <nav>
-                <NavigationItems/>
+                <NavigationItems clicked = {props.clicked} show = {props.show}/>
             </nav>
         </div>
     );
