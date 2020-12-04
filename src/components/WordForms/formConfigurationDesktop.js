@@ -13,10 +13,10 @@ export default formConfigurationMobile = [
         time: 'future',
         label: '',
         placeholder: '',
-        rowStart: '14',
-        rowEnd: '15',
-        columnStart: '8',
-        columnEnd: '11'
+        rowStart: '15',
+        rowEnd: '16',
+        columnStart: '6',
+        columnEnd: '9'
     },
     {
         type: 'input',
@@ -26,8 +26,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '16',
         rowEnd: '17',
-        columnStart: '4',
-        columnEnd: '5'
+        columnStart: '6',
+        columnEnd: '9'
     },
     {
         type: 'input',
@@ -37,8 +37,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '15',
         rowEnd: '16',
-        columnStart: '8',
-        columnEnd: '9'
+        columnStart: '14',
+        columnEnd: '17'
     },
     {
         type: 'input',
@@ -48,8 +48,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '16',
         rowEnd: '17',
-        columnStart: '8',
-        columnEnd: '9'
+        columnStart: '14',
+        columnEnd: '17'
     },
     {
         type: 'input',
@@ -57,8 +57,8 @@ export default formConfigurationMobile = [
         time: 'future',
         rowStart: '17',
         rowEnd: '18',
-        columnStart: '7',
-        columnEnd: '8'
+        columnStart: '12',
+        columnEnd: '15'
     },
     {
         type: 'input',
@@ -66,8 +66,8 @@ export default formConfigurationMobile = [
         time: 'future',
         rowStart: '18',
         rowEnd: '19',
-        columnStart: '7',
-        columnEnd: '8'
+        columnStart: '12',
+        columnEnd: '15'
     },
     {
         type: 'input',
@@ -77,8 +77,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '19',
         rowEnd: '20',
-        columnStart: '7',
-        columnEnd: '8'
+        columnStart: '12',
+        columnEnd: '15'
     },
     {
         type: 'input',
@@ -86,8 +86,8 @@ export default formConfigurationMobile = [
         time: 'future',
         rowStart: '20',
         rowEnd: '21',
-        columnStart: '7',
-        columnEnd: '8'
+        columnStart: '12',
+        columnEnd: '15'
     },
     {
         type: 'input',
@@ -95,8 +95,8 @@ export default formConfigurationMobile = [
         time: 'future',
         rowStart: '17',
         rowEnd: '18',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -106,8 +106,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '18',
         rowEnd: '19',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -115,8 +115,8 @@ export default formConfigurationMobile = [
         time: 'future',
         rowStart: '19',
         rowEnd: '20',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -126,8 +126,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '20',
         rowEnd: '21',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -137,8 +137,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '17',
         rowEnd: '18',
-        columnStart: '9',
-        columnEnd: '10'
+        columnStart: '16',
+        columnEnd: '19'
     },
     {
         type: 'input',
@@ -148,8 +148,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '18',
         rowEnd: '19',
-        columnStart: '9',
-        columnEnd: '10'
+        columnStart: '16',
+        columnEnd: '19'
     },
     {
         type: 'input',
@@ -159,8 +159,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '19',
         rowEnd: '20',
-        columnStart: '9',
-        columnEnd: '10'
+        columnStart: '16',
+        columnEnd: '19'
     },
     {
         type: 'input',
@@ -170,8 +170,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '20',
         rowEnd: '21',
-        columnStart: '9',
-        columnEnd: '10'
+        columnStart: '16',
+        columnEnd: '19'
     },
     {
         type: 'input',
@@ -181,8 +181,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '17',
         rowEnd: '18',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -190,8 +190,8 @@ export default formConfigurationMobile = [
         time: 'future',
         rowStart: '18',
         rowEnd: '19',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -201,8 +201,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '19',
         rowEnd: '20',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -212,19 +212,19 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '20',
         rowEnd: '21',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
         name: 'imperative_man_plural',
         time: 'imperative',
         label: '',
-        placeholder: '',
+        placeholder: 'imperative_man_plural',
         rowStart: '5',
         rowEnd: '6',
-        columnStart: '7',
-        columnEnd: '8'
+        columnStart: '12',
+        columnEnd: '15'
     },
     {
         type: 'input',
@@ -234,8 +234,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '6',
         rowEnd: '7',
-        columnStart: '7',
-        columnEnd: '8'
+        columnStart: '12',
+        columnEnd: '15'
     },
     {
         type: 'input',
@@ -243,8 +243,9 @@ export default formConfigurationMobile = [
         time: 'imperative',
         rowStart: '5',
         rowEnd: '6',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7',
+        placeholder: 'imperative_man_singular'
     },
     {
         type: 'input',
@@ -254,8 +255,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '6',
         rowEnd: '7',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -265,8 +266,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '5',
         rowEnd: '6',
-        columnStart: '9',
-        columnEnd: '10'
+        columnStart: '16',
+        columnEnd: '19'
     },
     {
         type: 'input',
@@ -274,8 +275,8 @@ export default formConfigurationMobile = [
         time: 'imperative',
         rowStart: '6',
         rowEnd: '7',
-        columnStart: '9',
-        columnEnd: '10'
+        columnStart: '16',
+        columnEnd: '19'
     },
     {
         type: 'input',
@@ -285,8 +286,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '5',
         rowEnd: '6',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -296,8 +297,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '6',
         rowEnd: '7',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -307,8 +308,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '3',
         rowEnd: '4',
-        columnStart: '6',
-        columnEnd: '7',
+        columnStart: '9',
+        columnEnd: '14',
     },
     {
         type: 'input',
@@ -318,8 +319,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '4',
         rowEnd: '5',
-        columnStart: '6',
-        columnEnd: '7'
+        columnStart: '9',
+        columnEnd: '14'
     },
     {
         type: 'input',
@@ -329,8 +330,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '9',
         rowEnd: '10',
-        columnStart: '4',
-        columnEnd: '5'
+        columnStart: '6',
+        columnEnd: '9'
     },
     {
         type: 'input',
@@ -340,8 +341,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '10',
         rowEnd: '11',
-        columnStart: '4',
-        columnEnd: '5'
+        columnStart: '6',
+        columnEnd: '9'
     },
     {
         type: 'input',
@@ -351,8 +352,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '9',
         rowEnd: '10',
-        columnStart: '8',
-        columnEnd: '9'
+        columnStart: '14',
+        columnEnd: '17'
     },
     {
         type: 'input',
@@ -362,8 +363,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '10',
         rowEnd: '11',
-        columnStart: '8',
-        columnEnd: '9'
+        columnStart: '14',
+        columnEnd: '17'
     },
     {
         type: 'input',
@@ -373,8 +374,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '11',
         rowEnd: '12',
-        columnStart: '7',
-        columnEnd: '8'
+        columnStart: '12',
+        columnEnd: '15'
     },
     {
         type: 'input',
@@ -382,8 +383,8 @@ export default formConfigurationMobile = [
         time: 'past',
         rowStart: '12',
         rowEnd: '13',
-        columnStart: '7',
-        columnEnd: '8'
+        columnStart: '12',
+        columnEnd: '15'
     },
     {
         type: 'input',
@@ -391,8 +392,8 @@ export default formConfigurationMobile = [
         time: 'past',
         rowStart: '11',
         rowEnd: '12',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -402,8 +403,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '12',
         rowEnd: '13',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -413,8 +414,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '13',
         rowEnd: '14',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -424,8 +425,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '14',
         rowEnd: '15',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -435,8 +436,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '13',
         rowEnd: '14',
-        columnStart: '8',
-        columnEnd: '9'
+        columnStart: '14',
+        columnEnd: '17'
     },
     {
         type: 'input',
@@ -446,8 +447,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '14',
         rowEnd: '15',
-        columnStart: '8',
-        columnEnd: '9'
+        columnStart: '14',
+        columnEnd: '17'
     },
     {
         type: 'input',
@@ -457,8 +458,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '11',
         rowEnd: '12',
-        columnStart: '9',
-        columnEnd: '10'
+        columnStart: '16',
+        columnEnd: '19'
     },
     {
         type: 'input',
@@ -468,8 +469,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '12',
         rowEnd: '13',
-        columnStart: '9',
-        columnEnd: '10'
+        columnStart: '16',
+        columnEnd: '19'
     },
     {
         type: 'input',
@@ -479,8 +480,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '11',
         rowEnd: '12',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -490,8 +491,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '12',
         rowEnd: '13',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -501,8 +502,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '13',
         rowEnd: '14',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -510,8 +511,8 @@ export default formConfigurationMobile = [
         time: 'past',
         rowStart: '14',
         rowEnd: '15',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -521,8 +522,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '7',
         rowEnd: '8',
-        columnStart: '7',
-        columnEnd: '8'
+        columnStart: '12',
+        columnEnd: '15'
     },
     {
         type: 'input',
@@ -532,8 +533,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '8',
         rowEnd: '9',
-        columnStart: '7',
-        columnEnd: '8'
+        columnStart: '12',
+        columnEnd: '15'
     },
     {
         type: 'input',
@@ -543,8 +544,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '7',
         rowEnd: '8',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -554,8 +555,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '8',
         rowEnd: '9',
-        columnStart: '3',
-        columnEnd: '4'
+        columnStart: '4',
+        columnEnd: '7'
     },
     {
         type: 'input',
@@ -565,8 +566,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '7',
         rowEnd: '8',
-        columnStart: '9',
-        columnEnd: '10'
+        columnStart: '16',
+        columnEnd: '19'
     },
     {
         type: 'input',
@@ -576,8 +577,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '8',
         rowEnd: '9',
-        columnStart: '9',
-        columnEnd: '10'
+        columnStart: '16',
+        columnEnd: '19'
     },
     {
         type: 'input',
@@ -587,8 +588,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '7',
         rowEnd: '8',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'input',
@@ -598,8 +599,8 @@ export default formConfigurationMobile = [
         placeholder: '',
         rowStart: '8',
         rowEnd: '9',
-        columnStart: '5',
-        columnEnd: '6'
+        columnStart: '8',
+        columnEnd: '11'
     },
     {
         type: 'icon',
@@ -610,8 +611,8 @@ export default formConfigurationMobile = [
                     iconSrc: One,
                     rowStart: '1',
                     rowEnd: '2',
-                    columnStart: '8',
-                    columnEnd: '9'
+                    columnStart: '6',
+                    columnEnd: '7'
                 },
             ]
         },
@@ -625,8 +626,8 @@ export default formConfigurationMobile = [
                     iconSrc: Many,
                     rowStart: '1',
                     rowEnd: '2',
-                    columnStart: '17',
-                    columnEnd: '18'
+                    columnStart: '16',
+                    columnEnd: '17'
                 },
             ]
         },
@@ -640,8 +641,8 @@ export default formConfigurationMobile = [
                     iconSrc: Man,
                     rowStart: '2',
                     rowEnd: '3',
-                    columnStart: '3',
-                    columnEnd: '4'
+                    columnStart: '4',
+                    columnEnd: '5'
                 },
             ],
             present: [
@@ -650,8 +651,8 @@ export default formConfigurationMobile = [
                     iconSrc: Man,
                     rowStart: '2',
                     rowEnd: '3',
-                    columnStart: '7',
-                    columnEnd: '8'
+                    columnStart: '14',
+                    columnEnd: '15'
                 },
             ],
         },
@@ -665,8 +666,8 @@ export default formConfigurationMobile = [
                     iconSrc: Woman,
                     rowStart: '2',
                     rowEnd: '3',
-                    columnStart: '5',
-                    columnEnd: '6'
+                    columnStart: '8',
+                    columnEnd: '9'
                 },
             ],
             present: [
@@ -675,8 +676,8 @@ export default formConfigurationMobile = [
                     iconSrc: Woman,
                     rowStart: '2',
                     rowEnd: '3',
-                    columnStart: '9',
-                    columnEnd: '10'
+                    columnStart: '18',
+                    columnEnd: '19'
                 },
             ],
         },

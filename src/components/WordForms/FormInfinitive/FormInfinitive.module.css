@@ -12,6 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #dfdfdf;
+
 }
 
 .Icon {
@@ -27,6 +29,7 @@
     /*justify-content: center;*/
 }
 .Item {
+    border-top: 1px solid #dfdfdf;
     grid-column: 2/3;
     grid-row: 2/3;
     padding: 5px;
@@ -139,6 +142,7 @@
     .FormGrid {
         width: 90%;
         grid-template-rows: repeat(20, 35px);
-        grid-template-columns: repeat(20, 1fr);
+        grid-template-columns: repeat(18, 1fr);
+
     }
 }
