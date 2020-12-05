@@ -168,22 +168,30 @@ class FormAddVerb extends Component {
             future_man_plural_3nd_transcription,
             future_woman_singular_3nd_transcription,
             future_woman_plural_3nd_transcription
-        };
+        }
         return values;
     }
     nextStep = () => {
         const {step} = this.state;
         this.setState({step: step + 1})
         window.scrollTo(0, 0)
-    };
+    }
     prevStep = () => {
         const {step} = this.state;
         this.setState({step: step - 1})
         window.scrollTo(0, 0)
-    };
+    }
     handleChange = input => e => {
-        this.setState({[input]: e.target.value});
-    };
+        const value = e.target.value
+        this.setState({[input]: value})
+    }
+    validate = value => {
+        if (value) {
+            const regex = /[`0-9~&<>;@/[\]|{}=`]/
+            return !regex.test(value)
+        }
+        return true
+    }
     renderForm = (timeTitles, type) => {
         let values = this.getInputs();
         let inputs = [];
@@ -215,12 +223,15 @@ class FormAddVerb extends Component {
                              key={index}
                         >
                             <CustomInput
+                                key={index}
                                 name={name}
                                 inputLabel={label}
                                 id={name}
                                 placeholder={placeholder}
                                 onChange={this.handleChange(name)}
-                                value={values[name]}
+                                value={values[name]}  //state
+                                isValidate={this.validate(values[name])}
+                                // isValidate={this.validate}
                                 // defaultValue={''}
                             />
                         </div>
@@ -243,7 +254,9 @@ class FormAddVerb extends Component {
                         <div className={classes.FormGridItem} style={{
                             gridRow: `${rowStart}/${rowEnd}`,
                             gridColumn: `${columnStart}/${columnEnd}`
-                        }}>
+                        }}
+                             key={index}
+                        >
                             <img className={classes.Icon} src={iconSrc}
                                  alt={alt}
                                  key={index}/>

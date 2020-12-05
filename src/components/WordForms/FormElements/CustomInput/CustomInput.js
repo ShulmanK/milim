@@ -2,10 +2,16 @@ import React from 'react';
 import "./CustomInput.scss"
 
 const CustomInput = (props) => {
+    const {isValidate} = props
+    // console.log('isValidate', isValidate)
+    let attachedClasses = 'CustomFormInput';
+    if(!isValidate){
+        attachedClasses = 'CustomFormInput Error';
+    }
     return (
         <div className={'InputBox'}>
             <label htmlFor={props.name} hidden={false}>{props.inputLabel}</label>
-            <input className={'CustomFormInput'}
+            <input className={attachedClasses}
                    type="text"
                    id={props.name}
                    value={props.value}
