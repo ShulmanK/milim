@@ -1,8 +1,9 @@
 import React, {Component, Fragment} from 'react';
 import {ThemeProvider as MuiThemeProvider} from '@material-ui/core/styles'
-import CustomInput from "../FormElements/CustomInput/CustomInput";
+import CustomInput from "../../FormElements/CustomInput/CustomInput";
 import Button from '@material-ui/core/Button';
-import classes from './FormInfinitive.module.css';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import classes from '../../FormInfinitive.module.scss';
 
 class FormInfinitive extends Component {
     continue = (e) => {
@@ -19,7 +20,9 @@ class FormInfinitive extends Component {
                 <div className={classes.ButtonSection}><Button
                     variant="contained"
                     color="primary"
-                    onClick={this.continue}>Continue</Button></div>
+                    onClick={this.continue}
+                    endIcon={<NavigateNextIcon/>}
+                >Next</Button></div>
             </Fragment>
         );
     }

@@ -1,14 +1,14 @@
 import React, {Component, Fragment} from 'react';
-import FormInfinitive from '../../components/WordForms/FormInfinitive/FormInfinitive';
-import FormPast from '../../components/WordForms/FormPast/FormPast';
-import FormFuture from '../../components/WordForms/FormFuture/FormFuture';
-import classes from '../../components/WordForms/FormInfinitive/FormInfinitive.module.css';
+import FormInfinitive from '../../components/WordForms/FormMobile/FormInfinitive/FormInfinitive';
+import FormPast from '../../components/WordForms/FormMobile/FormPast/FormPast';
+import FormFuture from '../../components/WordForms/FormMobile/FormFuture/FormFuture';
+import classes from '../../components/WordForms/FormInfinitive.module.scss';
 import formConfigMobile from "../../components/WordForms/formConfigurationMobile";
 import formConfigDesktop from "../../components/WordForms/formConfigurationDesktop";
 import FormDesktop from "../../components/WordForms/FormDesktop/FormDesktop";
 import CustomInput from "../../components/WordForms/FormElements/CustomInput/CustomInput";
 
-class FormAddWord extends Component {
+class FormAddVerb extends Component {
     state = {
         step: 1,
         infinitive: '',
@@ -174,10 +174,12 @@ class FormAddWord extends Component {
     nextStep = () => {
         const {step} = this.state;
         this.setState({step: step + 1})
+        window.scrollTo(0, 0)
     };
     prevStep = () => {
         const {step} = this.state;
         this.setState({step: step - 1})
+        window.scrollTo(0, 0)
     };
     handleChange = input => e => {
         this.setState({[input]: e.target.value});
@@ -187,7 +189,7 @@ class FormAddWord extends Component {
         let inputs = [];
         let titles = [];
         let icons = [];
-        let config = type === 'mobile' ? formConfigMobile :  formConfigDesktop;
+        let config = type === 'mobile' ? formConfigMobile : formConfigDesktop;
         timeTitles.map(timeTitle => {
             let timeInputs = config.filter(input => input.time === timeTitle && input.type === 'input');
             let timeTitles = config.filter(title => title.time === timeTitle && title.type === 'title');
@@ -201,55 +203,58 @@ class FormAddWord extends Component {
                 }
             })
         })
-        return <div className={classes.FormGrid}>
-            {inputs.map((input, index) => {
-                const {rowStart, rowEnd, columnStart, columnEnd, time, label, placeholder, name, iconSrc, iconAlt} = input;
-                return (
-                    <div className={classes.FormGridItem} style={{
-                        gridRow: `${rowStart}/${rowEnd}`,
-                        gridColumn: `${columnStart}/${columnEnd}`
-                    }}
-                         key={index}
-                    >
-                        <CustomInput
-                            name={name}
-                            inputLabel={label}
-                            id={name}
-                            placeholder={placeholder}
-                            onChange={this.handleChange(name)}
-                            value={values[name]}
-                            // defaultValue={''}
-                        />
-                    </div>
-                )
-            })}
-            {titles.map((title, index) => {
-                const {rowStart, rowEnd, columnStart, columnEnd, name,} = title;
-                return (
-                    <div className={[classes.ConjugationTitle, classes.FormGridItem].join(' ')} style={{
-                        gridRow: `${rowStart}/${rowEnd}`,
-                        gridColumn: `${columnStart}/${columnEnd}`
-                    }}
-                         key={index}
-                    >{name}</div>
-                )
-            })}
-            {icons.map((icon, index) => {
-                const {iconSrc, alt, rowStart, rowEnd, columnStart, columnEnd} = icon;
-                return (
-                    <div className={classes.FormGridItem} style={{
-                        gridRow: `${rowStart}/${rowEnd}`,
-                        gridColumn: `${columnStart}/${columnEnd}`
-                    }}>
-                        <img className={classes.Icon} src={iconSrc}
-                             alt={alt}
-                             key={index}/>
-                    </div>
-                )
-            })}
-        </div>
+        return (
+            <div className={classes.FormGrid}>
+                {inputs.map((input, index) => {
+                    const {rowStart, rowEnd, columnStart, columnEnd, time, label, placeholder, name, iconSrc, iconAlt} = input;
+                    return (
+                        <div className={classes.FormGridItem} style={{
+                            gridRow: `${rowStart}/${rowEnd}`,
+                            gridColumn: `${columnStart}/${columnEnd}`
+                        }}
+                             key={index}
+                        >
+                            <CustomInput
+                                name={name}
+                                inputLabel={label}
+                                id={name}
+                                placeholder={placeholder}
+                                onChange={this.handleChange(name)}
+                                value={values[name]}
+                                // defaultValue={''}
+                            />
+                        </div>
+                    )
+                })}
+                {titles.map((title, index) => {
+                    const {rowStart, rowEnd, columnStart, columnEnd, name,} = title;
+                    return (
+                        <div className={[classes.ConjugationTitle, classes.FormGridItem].join(' ')} style={{
+                            gridRow: `${rowStart}/${rowEnd}`,
+                            gridColumn: `${columnStart}/${columnEnd}`
+                        }}
+                             key={index}
+                        >{name}</div>
+                    )
+                })}
+                {icons.map((icon, index) => {
+                    const {iconSrc, alt, rowStart, rowEnd, columnStart, columnEnd} = icon;
+                    return (
+                        <div className={classes.FormGridItem} style={{
+                            gridRow: `${rowStart}/${rowEnd}`,
+                            gridColumn: `${columnStart}/${columnEnd}`
+                        }}>
+                            <img className={classes.Icon} src={iconSrc}
+                                 alt={alt}
+                                 key={index}/>
+                        </div>
+                    )
+                })}
+            </div>
+        )
+
     }
-    getFormMobile= () => {
+    getFormMobile = () => {
         const {step} = this.state;
         switch (step) {
             case 1:
@@ -278,28 +283,29 @@ class FormAddWord extends Component {
                         renderForm={this.renderForm}
                     />
                 );
-            case 4:
-                return <h1>Success</h1>
         }
     };
-    getFormDesktop= () => {
+    getFormDesktop = () => {
 
-                return (
-                    <FormDesktop
-                        nextStep={this.nextStep}
-                        handleChange={this.handleChange}
-                        renderForm={this.renderForm}
-                    />
-                );
+        return (
+            <FormDesktop
+                nextStep={this.nextStep}
+                handleChange={this.handleChange}
+                renderForm={this.renderForm}
+            />
+        );
 
     };
+
     render() {
         let width = window.innerWidth;
-        if(width < 500){
+        if (width < 500) {
             return (
                 <Fragment>
-                    <div className={classes.FormTitle}>Add Verb</div>
-                    {this.getFormMobile()}
+                    <div className={classes.FormMobileContainer}>
+                        <div className={classes.FormTitle}>Add Verb</div>
+                        {this.getFormMobile()}
+                    </div>
                 </Fragment>
             )
         } else {
@@ -314,4 +320,5 @@ class FormAddWord extends Component {
 
     }
 }
-export default FormAddWord;
+
+export default FormAddVerb;

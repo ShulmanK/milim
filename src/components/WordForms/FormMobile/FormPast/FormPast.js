@@ -1,6 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import Button from "@material-ui/core/Button";
-import classes from '../FormInfinitive/FormInfinitive.module.css';
+import NavigateNextIcon from "@material-ui/icons/NavigateNext";
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+import classes from '../../FormInfinitive.module.scss';
 
 class FormPast extends Component {
     continue = (e) => {
@@ -21,12 +23,19 @@ class FormPast extends Component {
                 {this.props.renderForm(["past"], 'mobile')}
                 <div className={classes.ButtonSection}>
                     <Button
+                        onClick={this.back}
+                        variant="contained"
+                        startIcon={<NavigateBeforeIcon/>}>
+                        Back
+                    </Button>
+                    <Button
                         onClick={this.continue}
                         variant="contained"
-                        color="primary">Continue</Button>
-                    <Button
-                        onClick={this.back}
-                        variant="contained">Back</Button>
+                        color="primary"
+                        endIcon={<NavigateNextIcon/>}>
+                        Next
+                    </Button>
+
                 </div>
 
 

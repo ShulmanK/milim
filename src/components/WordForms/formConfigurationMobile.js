@@ -749,7 +749,7 @@ export default formConfigurationMobile = [
                 {
                     alt: 'people',
                     iconSrc: Many,
-                    rowStart: '8',
+                    rowStart: '9',
                     rowEnd: '10',
                     columnStart: '2',
                     columnEnd: '3'

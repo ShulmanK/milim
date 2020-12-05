@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import Button from "@material-ui/core/Button";
-import classes from '../FormInfinitive/FormInfinitive.module.css';
+import SaveIcon from '@material-ui/icons/Save';
+import classes from '../FormInfinitive.module.scss';
 
 class FormDesktop extends Component {
     continue = (e) => {
@@ -22,11 +23,11 @@ class FormDesktop extends Component {
                 <div className={classes.ButtonSection}>
                     <Button
                         onClick={this.continue}
-                        variant="contained"
-                        color="primary">Continue</Button>
-                    <Button
-                        onClick={this.back}
-                        variant="contained">Back</Button>
+                        variant="outlined"
+                        color="primary"
+                        startIcon={<SaveIcon />}
+                    >Save</Button>
+
                 </div>
 
 

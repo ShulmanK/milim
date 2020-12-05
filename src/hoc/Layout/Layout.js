@@ -9,7 +9,6 @@ class Layout extends Component {
     };
 
     sideDrawerToggle = () => {
-      console.log('her sobachiy')
       this.setState(prevState=> {
           return {isSideDrawerOpened: !prevState.isSideDrawerOpened}
       })

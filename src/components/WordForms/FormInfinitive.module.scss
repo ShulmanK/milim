@@ -1,0 +1,171 @@
+.FormGrid {
+  display: grid;
+  grid-template-rows: repeat(14, 50px);
+  grid-template-columns: 1fr 1fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr;
+
+  .FormGridItem {
+    width: 100%;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid #dfdfdf;
+
+  }
+}
+
+.FormMobileContainer{
+  width: 95%;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  overflow: scroll;
+}
+
+.Icon {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.InfinitiveBox {
+  /*display: flex;*/
+  /*justify-content: center;*/
+}
+
+.Item {
+  border-top: 1px solid #dfdfdf;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 5px;
+}
+
+.InfinitiveRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.UsersIcon {
+  width: 20px;
+  height: 30px;
+}
+
+.IconBox {
+  width: 15px;
+  height: 15px;
+  margin-top: 15px;
+}
+
+.UsersIconBox {
+  width: 15px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.Input {
+  width: 35%;
+  font-size: 10px;
+}
+
+.TimeTitle {
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.ConjugationTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-style: italic;
+}
+
+
+.ImperativeBox {
+
+}
+
+.TimeRow {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.GenderSignRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.Columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.InfoBox {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.Conjugation {
+  margin-right: 10px;
+}
+
+.ButtonSection {
+  margin-top: 25px;
+  buttom: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.FormTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.FormContainer {
+  //border: 1px solid grey;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+@media only screen and (min-width: 500px) {
+  .FormContainer {
+    //display: block;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .FormGrid {
+    width: 80%;
+    grid-template-rows: repeat(20, 35px);
+    grid-template-columns: repeat(18, 1fr);
+  }
+  .ButtonSection {
+    margin-top: 20px;
+    margin-right: 20px;
+    //display: flex;
+    //justify-content: center;
+  }
+}
