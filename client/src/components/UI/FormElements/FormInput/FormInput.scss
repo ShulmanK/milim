@@ -1,0 +1,49 @@
+@import '@/styles/variables.scss';
+
+.InputBox{
+  width: 100%;
+  margin-top: 10px;
+}
+.InputBox input::placeholder{
+  color: #b2b2b2;
+}
+
+.InputContainer{
+  display: flex;
+  border: 1px solid $text-color;
+  border-radius:6px;
+  padding: 2px;
+}
+
+.FormInput{
+  width: 98%;
+  height: 38px;
+  font-size: 18px;
+  padding: 4px 8px;
+  border: none;
+  
+  // background: #F5F5F5;
+  transition: background 1s;
+  transition-timing-function: linear;
+}
+.InputLabel{
+  margin-bottom: $default-margin;
+  font-size: 1rem;
+}
+
+.InputError {
+  // background: #FF9AA2;
+}
+
+.FormInput:focus {
+  outline: 0 none;
+}
+
+.IconLabel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid $text-color;
+  width: 50px;
+}
+

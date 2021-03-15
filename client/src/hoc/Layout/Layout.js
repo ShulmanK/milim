@@ -1,7 +1,8 @@
-import React, {Component, Fragment} from 'react';
-import Toolbar from "../../components/UI/Navigation/Toolbar/Toolbar";
-import classes from './Layout.module.css';
-import SideDrawer from "../../components/UI/Navigation/SideDrawer/SideDrawer";
+import React, {Component, Fragment} from 'react'
+import Container from '@/containers/Container/Container'
+import Toolbar from "@components/UI/Navigation/Toolbar/Toolbar"
+import SideDrawer from "@components/UI/Navigation/SideDrawer/SideDrawer"
+import s from './Layout.module.scss';
 
 class Layout extends Component {
     state = {
@@ -16,11 +17,11 @@ class Layout extends Component {
 
     render() {
         return (
-            <Fragment>
+            <div className={s.Layout}>
                 <Toolbar clicked = {this.sideDrawerToggle} show = {this.state.isSideDrawerOpened}/>
-                <SideDrawer clicked = {this.sideDrawerToggle} show = {this.state.isSideDrawerOpened} />
-                <main className={classes.Content}>{this.props.children}</main>
-            </Fragment>
+                {/* <SideDrawer clicked = {this.sideDrawerToggle} show = {this.state.isSideDrawerOpened} /> */}
+                <Container children={this.props.children}/>
+            </div>
         );
     }
 }

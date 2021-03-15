@@ -1,0 +1,69 @@
+@import '@/styles/variables.scss';
+@import "@/styles/mixins.scss";
+
+.word_form {
+	width: 90%;
+	height: 450px;
+	margin: 20px auto;
+	border-radius: 10px;
+	box-shadow: $default_shadow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+}
+
+.text {
+	@include text;
+	margin-top: 20px;
+}
+
+.parts_speech_carousel {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 60%;
+	height: 40px;
+}
+
+.text_bold {
+	@include text;
+	font-weight: bold;
+	border-radius: 5px;
+	width: 60%;
+	height: 100%;
+	margin: auto auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrow_btn {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 15%;
+	height: 100%;
+	&:active { 
+		background: $brown-middle;
+	}
+}
+
+.input_section{
+	width: 90%;
+}
+
+.toggle_section{
+	width: 86%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.button_section{
+	margin-top: 70px
+}
+

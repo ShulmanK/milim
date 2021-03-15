@@ -1,0 +1,18 @@
+@import '@/styles/variables.scss';
+
+.Button {
+	width: 168px;
+	height: 40px;
+	background: $brown-middle;
+	border: none;
+	box-shadow: $default-shadow;
+	color: #fff;
+	font-size: $font-text;
+	font-weight: bold;
+	border-radius: 50px;
+	outline: none;
+	transition: transform .2s ease;
+	&:active {
+		transform: translateY(2px);
+	  }
+}

@@ -1,0 +1,6 @@
+@import '@/styles/variables.scss';
+
+@mixin text(){
+	color: $text-color;
+	font-size: $font-text;
+}

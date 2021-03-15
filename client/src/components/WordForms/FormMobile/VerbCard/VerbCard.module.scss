@@ -1,0 +1,36 @@
+.VerbCard {
+        padding: 20px;
+}
+
+.title {
+        font-size: 18px;
+}
+
+.infinitive {
+        text-align: center;
+        font-size: 24px;
+        font-style: italic;
+}
+
+.grid {
+        display: grid;
+        margin-top: 30px;
+        grid-template-rows: repeat(20, 40px);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        .gridItem {
+                width: 100%;
+                justify-self: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+}
+
+.Icon {
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}

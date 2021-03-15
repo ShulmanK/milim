@@ -1,9 +1,12 @@
 const express = require("express")
 const mongoose = require("mongoose")
+var cors = require("cors")
+const wordsRouter = require("./routes/words.routes")
 const app = express()
 
+app.use(cors())
 app.use(express.json())
-app.use("/api/words", require("./routes/words.routes"))
+app.use("/api/words", wordsRouter)
 
 const PORT = 5000
 const mongoUrl = "mongodb://localhost:27017/milim"
